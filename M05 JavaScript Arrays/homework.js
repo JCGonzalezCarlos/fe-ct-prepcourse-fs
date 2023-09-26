@@ -229,15 +229,16 @@ function breakStatement(num) {
    // Tu código:
    var array = [];
    var i = 0;
+   suma = num;
 
    while (i < 10) {
-      i = i + 2;
-      array.push(i);
      
-      if (i === array[i]){
+      if (suma ===i){
+         return("Se interrumpió la ejecución");
          break;   
-      }
-      return "Se interrumpió la ejecución";      
+      }suma += 2;
+      array.push(suma);
+      i++;      
     } return array;
    
 }
@@ -249,6 +250,22 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+   var arre = [];
+   var i = 0;
+
+   for(var i=0; i<10 ; i++){
+      
+      if (i === 5){
+         continue;
+      }else{
+         num += 2;
+         arre.push(num);
+      }
+      
+   }
+   return arre;
+   
+      
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
